@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample</title>
+    <style>
+        body {
+            background-image: url("image/pulsar.jpg");
+            opacity: 0.5;
+        }
+
+        #header {
+            width: 800px;
+            margin: 0 auto;
+            background-color: red;
+            color: white;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        nav ul {
+            padding: top 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            border-left: 1px solid #999;
+            font: bold 12px bottom;
+            padding: 0 10px;
+        }
+
+        #Wrap {
+            width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #customaside {
+            width: 300px;
+            float: left;
+            background: lawngreen;
+        }
+
+        #customnav {
+        width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+        }
+
+        #custom_content > article > h1:hover {
+            background: darkblue;
+        }
+
+        #custom_content > article > h1:active {
+            background: green;
+        }
+
+        .item {
+        color: violet;
+        }
+
+        .second_footer {
+            background-color: beige;
+            border: black;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>HTML 기본</h1>
+    </header>
+    <nav id="customnav">
+        <ul>
+            <li><a href="test01.html">메뉴1</a></li>
+            <li><a href="test02.html">메뉴2</a></li>
+            <li><a href="test03.html">메뉴3</a></li>
+        </ul>
+    </nav>
+    <main id="Wrap">
+        <aside id="customaside">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </aside>
+        <section id="custom_content">
+            <article>
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+            <article>
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <address class="item second_footer">dddd</address>
+    </footer>
+</body>
+</html>

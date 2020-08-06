@@ -6,12 +6,26 @@
         <script>
             window.onload = function () {
                 var output = "";
-                for (let index = 0; index < 10; index++) {
-                    output += "<h1>header : " + index + "</h1>";
-                }
+                // for (let index = 0; index < 10; index++) {
+                //     output += "<h1>header : " + index + "</h1>";
+                // }
 
-                document.body.innerHTML = output;
+                // document.body.innerHTML = output;
                 //document.body.textContent = output;
+
+                // gradation div
+                for (let index = 0; index < 255; index++) {
+                    output += "<div></div>";
+                }
+                document.body.innerHTML = output;
+
+                var divs = document.querySelectorAll("div");
+                for (let index = 0; index < divs.length; index++) {
+                    var div = divs[index];
+
+                    div.style.height = "2px";
+                    div.style.backgroundColor = "rgb(" + index +", "+ index +", "+ index + ")";
+                }
             }
             
         </script>

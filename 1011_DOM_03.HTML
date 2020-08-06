@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" >
+    <meta charset="utf-8"/>
+    <head>
+        <title>document object model</title>
+        <script>
+            window.onload = function () {
+                // var image = document.getElementById("image");
+                // // image.width = 640;
+                // image.setAttribute("width", "640");
+                // // image.height = 400;
+                // image.setAttribute("height", "400");
+                // //image.src = "http://placehold.it/640x400";
+                // image.setAttribute("src", "http://placehold.it/640x200");
+
+                // // alert(image.getAttribute("width"));
+
+                // document.body.setAttribute("data-custom", "value");
+                // var datacustom = document.body.getAttribute("data-custom");
+                // alert(datacustom);
+
+                // timer
+                var clock = document.getElementById("clock");
+                setInterval(function () {
+                    var now = new Date();
+                    clock.innerHTML = now.toString();
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <!-- <img id="image"/> -->
+        <h1 id="clock"></h1>
+    </body>
+</html>

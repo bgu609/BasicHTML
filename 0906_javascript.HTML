@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko" >
+    <meta charset="utf-8"/>
+    <head>
+        <title>java script basic</title>
+        <script>
+            // 배열
+            var array = [273, "문자열", true, function () {alert("array function");}, {}, [1, 3]];
+            // alert(array[2]);
+            // 날짜
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth();
+            var day = date.getDay();
+            var hour = date.getHours();
+            var min = date.getMinutes();
+            var sec = date.getSeconds();
+            var msec = date.getMilliseconds();
+            // 변수 초기화
+            var pi = 3.141592;
+            var rad = 10;
+
+            // alert(date + "\n" + year + "년 " + month + "월 " + day + "일 \n" + "결과는 " + (2 * pi * rad));
+
+            var output = 0;
+            for (let index = 0; index <= 100; index++) {
+                output += index;
+                // alert(output);
+            }// alert(output);
+
+            // 익명 함수
+            // var func = function () {
+            //     alert("함수 0");
+            //     alert("함수 1");
+            // }
+
+            // function func() {
+            //     alert("함수 2");
+            // }
+
+            // var func = function () {
+            //     alert("함수 3");
+            //     alert("함수 4");
+            // }
+
+            // alert(typeof(func));
+            // alert(func);
+            // func();
+            
+            // 일반 함수
+            // var result = 0;
+            // function fnc(x) {
+            //     return (x * x * x);
+            // }
+            // result = fnc(8);
+            // alert(result);
+
+            // 콜백 함수
+            function callTenTime(fncParam) {
+                for (let index = 0; index < 10; index++) {
+                    fncParam();
+                }
+            }
+
+            // var fnc = function() {
+            //     alert("function call");
+            // }
+            // callTenTime(fnc);
+
+            // callTenTime(function() {
+            //     alert("function call");
+            // });
+
+            
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

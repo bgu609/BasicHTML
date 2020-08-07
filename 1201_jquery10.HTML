@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>jquery 02</title>
+        <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#input1").keydown(function(key){
+                    if((key.keyCode == 13)||($(this).val().length >= 6)&&!(key.keyCode == 8))
+                    {
+                        $("#input2").focus();
+                    }
+                });
+
+                $("#input2").keydown(function(key){
+                    if((key.keyCode == 8)&&($(this).val().length == 0))
+                    {
+                        $("#input1").focus();
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            <input id="input1" type="text" maxlength="6"/>
+            <br/>
+            <input id="input2" type="text" maxlength="7"/>
+        </form>
+    </body>
+</html>

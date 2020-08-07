@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>jquery 02</title>
+        <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                // $("button").css(function(){
+                //     $(".page").fadeToggle("slow");
+                // });
+
+                $("#box").css({
+                    width: 100,
+                    height: 100,
+                    backgroundColor: "red"
+                }).animate({
+                    width: 0
+                }).animate({
+                    width: 100
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- <button>Toggle Show</button> -->
+        <!-- <div class="page">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt laborum quos fugit provident debitis ipsa, eligendi soluta ratione voluptatem deserunt at est distinctio quibusdam magnam impedit cum tempora nam asperiores.</p>
+        </div> -->
+        <div id="box"></div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>jquery</title>
+        <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("h1").css("color", "blue");
+                $("h1").css("background", "black");
+
+                // attribute
+                var src = $("script").attr("src");
+                alert("jquery link = " + src);
+
+                // (attribute set < css set)
+                var img = $("img");
+                img.css("width", "320px");
+                img.css("height", "200px");
+                img.attr("src", "http://placehold.it/320x200");
+                img.attr("width", "400px");
+                img.css("content", "url(http://placehold.it/400x200)");
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Heading 1st</h1>
+        <h2>Heading 2nd</h2>
+        <h3>Heading 3rd</h3>
+
+        <img style="width: 30px; height: 20px;"/>
+        <img style="width: 30px; height: 20px;"/>
+    </body>
+</html>
